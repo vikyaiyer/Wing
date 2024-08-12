@@ -3,8 +3,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from "./(app)/homeScreen";
 import LoginScreen from "./loginScreen";
-import SignInScreen from "./signInScreen";
-import { VerifyPhoneScreen, PersonalDetailsScreen, EmailInputScreen, VerifyEmailScreen, DOBInputScreen } from "./signInScreen";
+import CreateAccountScreen from "./createAccountScreen";
+import { VerifyPhoneScreen, PersonalDetailsScreen, EmailInputScreen, VerifyEmailScreen, DOBInputScreen } from "./createAccountScreen";
 
 const Stack = createStackNavigator();
 
@@ -16,7 +16,7 @@ export default function Index() {
         headerShown: false
       }}>
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
-        <Stack.Screen name="SignInScreen" component={SignInScreen} />
+        <Stack.Screen name="CreateAccountScreen" component={CreateAccountScreen} />
         <Stack.Screen name="VerifyPhoneScreen" component={VerifyPhoneScreen} />
         <Stack.Screen name="PersonalDetailsScreen" component={PersonalDetailsScreen} />
         <Stack.Screen name="EmailInputScreen" component={EmailInputScreen} />

@@ -8,7 +8,8 @@ type UserDetails = {
   firstName: String,
   lastName: String,
   phoneNumber: Number,
-  email: String
+  email: String,
+  dateOfBirth: String
 }
 const styles = StyleSheet.create({
     container: {
@@ -149,8 +150,7 @@ export function VerifyPhoneScreen({navigation}){
   </View>
   );
 };
-export default function SignInScreen({navigation}) {
-  var phoneNumber;
+export default function CreateAccountScreen({navigation}) {
     return(
         <View style={styles.container}> 
             <Text style={styles.inputTextStyle}>
@@ -159,7 +159,7 @@ export default function SignInScreen({navigation}) {
             <TextInput
               editable
               maxLength={255}
-              value= {phoneNumber}
+              value= {UserDetails.phoneNumber}
               style={{padding: 10}}
             />
             <Text>

@@ -41,7 +41,7 @@ export default function LoginScreen({navigation}) {
               </TouchableOpacity>
             </Text>
             
-           <TouchableOpacity  onPress={() => navigation.navigate('SignInScreen')} style={styles.appButtonContainer}>
+           <TouchableOpacity  onPress={() => navigation.navigate('CreateAccountScreen')} style={styles.appButtonContainer}>
             <Text style={styles.appButtonText}>Create account</Text>
           </TouchableOpacity>
           <Text style={{fontWeight: 'bold', fontSize: 16, paddingTop: 10}}>Sign in</Text>
